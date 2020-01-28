@@ -1,2 +1,144 @@
 
 @import "reset";
+@import "variables";
+
+// GENERAL
+body {
+    font-family: $content_font;
+    font-size: 1rem;
+	line-height: 2rem;
+    color: $main_color;
+}
+
+header {
+    width: auto;
+    height: 40rem;
+    background: url(/images/header_image.png);
+    background-position: center;
+    background-size: cover;
+}
+
+footer {
+    padding: 0 22%;
+    background-color: $main_color;
+}
+
+section {
+    margin: 5% 22% 0 22%;
+}
+
+h1,
+h2 {
+	font-family: $headings_font;
+	font-size: 2rem;
+	font-weight: 900;
+    line-height: 2rem;
+    text-transform: uppercase;
+}
+
+h3,
+.h3-style {
+	font-family: $headings_font;
+	font-size: 1.5rem;
+	font-weight: 500;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: $headings_font;
+	font-size: 1.5rem;
+	font-weight: 500;
+    line-height: 1.5rem;
+    text-transform: capitalize;
+    color: $secondary_color;
+}
+
+b {
+    font-weight: bold;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;
+}
+
+.large-container {
+    width: 75%;
+}
+
+.small-container {
+    display: inline-flex;
+    width: 10rem;
+    height: auto;
+
+    &.right {
+        justify-content: flex-end;
+    }
+}
+
+.green-img {
+    width: 75%;
+    height: auto;
+}
+
+.white {
+    color: white;
+}
+
+// HEADER
+#header-img-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#header-img {
+    width: 25rem;
+    height: auto;
+}
+
+// SECTION-CTA
+.section-cta {
+    text-align: center;
+}
+
+.register {
+    display: inline-block;
+    height: 20rem;
+    width: auto;
+}
+
+// SECTION-KAMPAANIAST
+.kampaania-fakt {
+    margin-top: 1rem;
+}
+
+.blue-icon {
+    width: 50%;
+    height: auto;
+}
+
+// SECTION-KUIDAS
+.kuidas-visioon {
+    margin-bottom: 4rem;
+}
+
+// SECTION-TERVISEPÄEV
+
+
+// FOOTER
+.footer-main {
+    display: flex;
+    width: 100%;
+    height: 25rem;
+    justify-content: space-between;
+}
+
+#green-text {
+    color: $secondary_color;
+}

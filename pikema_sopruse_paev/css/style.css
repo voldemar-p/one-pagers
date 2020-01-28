@@ -1,0 +1,201 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #05396B;
+}
+
+header {
+  width: auto;
+  height: 40rem;
+  background: url(/images/header_image.png);
+  background-position: center;
+  background-size: cover;
+}
+
+footer {
+  padding: 0 22%;
+  background-color: #05396B;
+}
+
+section {
+  margin: 5% 22% 0 22%;
+}
+
+h1,
+h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+h3,
+.h3-style {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-transform: capitalize;
+  color: #5CDB94;
+}
+
+b {
+  font-weight: bold;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 4rem;
+}
+
+.large-container {
+  width: 75%;
+}
+
+.small-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 10rem;
+  height: auto;
+}
+
+.small-container.right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.green-img {
+  width: 75%;
+  height: auto;
+}
+
+.white {
+  color: white;
+}
+
+#header-img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#header-img {
+  width: 25rem;
+  height: auto;
+}
+
+.section-cta {
+  text-align: center;
+}
+
+.register {
+  display: inline-block;
+  height: 20rem;
+  width: auto;
+}
+
+.kampaania-fakt {
+  margin-top: 1rem;
+}
+
+.blue-icon {
+  width: 50%;
+  height: auto;
+}
+
+.kuidas-visioon {
+  margin-bottom: 4rem;
+}
+
+.footer-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 25rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#green-text {
+  color: #5CDB94;
+}
+/*# sourceMappingURL=style.css.map */
