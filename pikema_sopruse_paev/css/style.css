@@ -323,4 +323,23 @@ b {
 #green-text {
   color: #5CDB94;
 }
+
+@media only screen and (min-width: 1024px) {
+  footer {
+    padding: 0 12%;
+  }
+  section {
+    margin: 6% 10% 0 10%;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  footer {
+    padding: 0 16%;
+    background-color: #05396B;
+  }
+  section {
+    margin: 6% 22% 0 22%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,29 @@
+@media only screen and (min-width: 320px) {
+
+}	
+
+@media only screen and (min-width: 768px) {
+
+}
+	
+@media only screen and (min-width: 1024px) {
+    footer {
+        padding: 0 12%;
+    }
+    
+    section {
+        margin: 6% 10% 0 10%;
+    }
+
+}
+
+@media only screen and (min-width: 1366px) {
+    footer {
+        padding: 0 16%;
+        background-color: $main_color;
+    }
+    
+    section {
+        margin: 6% 22% 0 22%;
+    }
+}

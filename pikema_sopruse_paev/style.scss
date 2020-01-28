@@ -1,6 +1,6 @@
 
-@import "reset";
-@import "variables";
+@import "scss_modules/reset";
+@import "scss_modules/variables";
 
 // GENERAL
 body {
@@ -239,3 +239,5 @@ b {
 #green-text {
     color: $secondary_color;
 }
+
+@import "scss_modules/responsive";
