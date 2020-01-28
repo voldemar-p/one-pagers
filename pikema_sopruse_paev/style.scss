@@ -6,7 +6,7 @@
 body {
     font-family: $content_font;
     font-size: 1rem;
-	line-height: 2rem;
+	line-height: 2.2rem;
     color: $main_color;
 }
 
@@ -19,12 +19,12 @@ header {
 }
 
 footer {
-    padding: 0 22%;
+    padding: 0 16%;
     background-color: $main_color;
 }
 
 section {
-    margin: 5% 22% 0 22%;
+    margin: 6% 22% 0 22%;
 }
 
 h1,
@@ -32,7 +32,7 @@ h2 {
 	font-family: $headings_font;
 	font-size: 2rem;
 	font-weight: 900;
-    line-height: 2rem;
+    line-height: 4.5rem;
     text-transform: uppercase;
 }
 
@@ -41,7 +41,7 @@ h3,
 	font-family: $headings_font;
 	font-size: 1.5rem;
 	font-weight: 500;
-    line-height: 1.5rem;
+    line-height: 3rem;
     text-transform: uppercase;
 }
 
@@ -53,6 +53,23 @@ h4 {
     text-transform: capitalize;
     color: $secondary_color;
 }
+
+a:active,
+a:visited,
+a:link {
+	font-weight: 300;
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: 400;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+  }
 
 b {
     font-weight: bold;
@@ -104,16 +121,51 @@ b {
 
 // SECTION-CTA
 .section-cta {
-    text-align: center;
+    display: flex;
+    margin-top: -5rem;
+    justify-content: space-between;
 }
 
 .register {
-    display: inline-block;
-    height: 20rem;
-    width: auto;
+    display: inline-flex;
+    flex-direction: column;
+    height: 15rem;
+    width: 19.5rem;
+    padding: 3rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $main_color;
+    border-radius: 0.75rem;
+}
+
+.button {
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: white;
+
+    &.logi {
+        background-color: $secondary_color;
+    }
+
+    &.hidden {
+        height: 2.5rem;
+        visibility: hidden;
+    }
+    
+    & img {
+        height: 1.75rem;
+        width: auto;
+        margin-bottom: -0.25rem;
+        padding-left: 0.5rem;
+    }
 }
 
 // SECTION-KAMPAANIAST
+.kampaaniast-igal {
+    margin-bottom: 3rem;
+}
+
 .kampaania-fakt {
     margin-top: 1rem;
 }
@@ -129,14 +181,59 @@ b {
 }
 
 // SECTION-TERVISEPÄEV
+#p-margin-top {
+    margin-top: 2.5rem;
+}
 
+.naidispaev-ul {
+    padding-left: 3rem;
+}
+
+// TÄNAME LIITUMAST
+#taname-container {
+    display: flex;
+    width: 100%;
+    height: 15rem;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/Mails.svg);
+    background-position: center;
+    background-size: initial;
+    background-repeat: no-repeat;
+}
+
+#taname-liitumast {
+	font-family: $headings_font;
+	font-size: 2.5rem;
+	font-weight: 900;
+    line-height: 2rem;
+    text-transform: uppercase;
+}
 
 // FOOTER
 .footer-main {
     display: flex;
     width: 100%;
-    height: 25rem;
+    height: 20rem;
     justify-content: space-between;
+    padding-top: 5rem;
+}
+
+.footer-vasak {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-parem {
+    font-size: 1.5rem;
+}
+
+#footer-logo {
+    display: inline-flex;
+    width: 18rem;
+    height: auto;
+    padding-bottom: 1rem;
 }
 
 #green-text {

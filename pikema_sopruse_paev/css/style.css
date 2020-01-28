@@ -55,7 +55,7 @@ table {
 body {
   font-family: "Roboto Mono", sans-serif;
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 2.2rem;
   color: #05396B;
 }
 
@@ -68,12 +68,12 @@ header {
 }
 
 footer {
-  padding: 0 22%;
+  padding: 0 16%;
   background-color: #05396B;
 }
 
 section {
-  margin: 5% 22% 0 22%;
+  margin: 6% 22% 0 22%;
 }
 
 h1,
@@ -81,7 +81,7 @@ h2 {
   font-family: "Rubik", sans-serif;
   font-size: 2rem;
   font-weight: 900;
-  line-height: 2rem;
+  line-height: 4.5rem;
   text-transform: uppercase;
 }
 
@@ -90,7 +90,7 @@ h3,
   font-family: "Rubik", sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
-  line-height: 1.5rem;
+  line-height: 3rem;
   text-transform: uppercase;
 }
 
@@ -101,6 +101,23 @@ h4 {
   line-height: 1.5rem;
   text-transform: capitalize;
   color: #5CDB94;
+}
+
+a:active,
+a:visited,
+a:link {
+  font-weight: 300;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: 400;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
 }
 
 b {
@@ -162,13 +179,60 @@ b {
 }
 
 .section-cta {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .register {
-  display: inline-block;
-  height: 20rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 15rem;
+  width: 19.5rem;
+  padding: 3rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #05396B;
+  border-radius: 0.75rem;
+}
+
+.button {
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  background-color: white;
+}
+
+.button.logi {
+  background-color: #5CDB94;
+}
+
+.button.hidden {
+  height: 2.5rem;
+  visibility: hidden;
+}
+
+.button img {
+  height: 1.75rem;
   width: auto;
+  margin-bottom: -0.25rem;
+  padding-left: 0.5rem;
+}
+
+.kampaaniast-igal {
+  margin-bottom: 3rem;
 }
 
 .kampaania-fakt {
@@ -184,15 +248,76 @@ b {
   margin-bottom: 4rem;
 }
 
+#p-margin-top {
+  margin-top: 2.5rem;
+}
+
+.naidispaev-ul {
+  padding-left: 3rem;
+}
+
+#taname-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 15rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(/images/Mails.svg);
+  background-position: center;
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+
+#taname-liitumast {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
 .footer-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 25rem;
+  height: 20rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 5rem;
+}
+
+.footer-vasak {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-parem {
+  font-size: 1.5rem;
+}
+
+#footer-logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 18rem;
+  height: auto;
+  padding-bottom: 1rem;
 }
 
 #green-text {
