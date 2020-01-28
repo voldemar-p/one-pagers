@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="132px" height="132px" viewBox="0 0 132 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Par_Clock</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing" transform="translate(-942.000000, -1408.000000)" fill="#5CDB94" fill-rule="nonzero">
+            <g id="body" transform="translate(-12.000000, 10.000000)">
+                <g id="content">
+                    <g id="section-kampaaniast" transform="translate(332.000000, 860.000000)">
+                        <g id="Group-15" transform="translate(0.000000, 516.000000)">
+                            <g id="Par_Clock" transform="translate(622.000000, 22.000000)">
+                                <path d="M66,0 C102.450793,0 132,29.5492065 132,66 C132,102.450793 102.450793,132 66,132 C29.5492065,132 0,102.450793 0,66 C0,29.5492065 29.5492065,0 66,0 Z M66,12 C36.1766235,12 12,36.1766235 12,66 C12,95.8233765 36.1766235,120 66,120 C95.8233765,120 120,95.8233765 120,66 C120,36.1766235 95.8233765,12 66,12 Z M66,24 C69.3137085,24 72,26.6862915 72,30 L72,30 L72,62.2917961 L92.6832816,72.6334369 C95.6471526,74.1153723 96.8484986,77.7194106 95.3665631,80.6832816 C93.8846277,83.6471526 90.2805894,84.8484986 87.3167184,83.3665631 L87.3167184,83.3665631 L63.3167184,71.3665631 C61.2840143,70.3502111 60,68.2726324 60,66 L60,66 L60,30 C60,26.6862915 62.6862915,24 66,24 Z" id="Combined-Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
