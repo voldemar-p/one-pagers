@@ -1,8 +1,86 @@
+// GENERAL
 body {
     font-family: $main_font;
+    font-size: 1.15rem;
 }
 
 section,
 footer {
     padding: 0 15%;
+}
+
+h1 {
+    font-size: 5.8rem;
+    font-weight: 300;
+    line-height: 3rem;
+    color: white;
+}
+
+h2 {
+    font-size: 3.3rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+h4 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1rem;
+}
+
+b {
+    font-weight: bold;
+}
+
+// HEADER
+header {
+    height: 85vh;
+    width: auto;
+    background-image: url(/images/header_background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.top-bar {
+    display: flex;
+}
+
+.header-text {
+    display: block;
+}
+
+// SUPER-DUPER
+.section-super-duper {
+    background-color: $main-color;
+}
+
+// DESIGN FEATURES
+.section-design-features {
+    background-color: $main_light_background_color;
+}
+
+// DESIGNED FOR HUMANS
+.section-designed-for-humans {
+    background-color: $main_dark_background_color;
+}
+
+// FEATURES
+.section-features {
+    background-color: $secondary_dark_background_color;
+}
+
+// GRID CONTENT
+.section-grid-content {
+    background-color: $secondary_light_background_color;
+}
+
+// FOOTER
+footer {
+    background-color: $main_dark_background_color;
 }
