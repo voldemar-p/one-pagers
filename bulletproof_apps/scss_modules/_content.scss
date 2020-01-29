@@ -7,7 +7,7 @@ body {
 
 section,
 footer {
-    padding: 0 15%;
+    padding: 3% 15%;
 }
 
 h1 {
@@ -18,13 +18,13 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 300;
     line-height: 1.75;
 }
 
 h3 {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     font-weight: 300;
     line-height: 1.5;
 }
@@ -40,7 +40,8 @@ b {
 }
 
 .button {
-    padding: 0.25rem 1.75rem;
+    padding: 0.5rem 1.5rem;
+    width: fit-content;
     font-weight: bold;
     background-color: $secondary-color;
     border-radius: 25px;
@@ -50,6 +51,10 @@ b {
         padding: 0.25rem 1.25rem;
         background-color: $main-color;
     }
+}
+
+.light {
+    color: $main_light_background_color;
 }
 
 // HEADER
@@ -138,19 +143,59 @@ header {
     background-color: $main-color;
 }
 
+.super-duper-container {
+    display: flex;
+    height: 20rem;
+    flex-direction: row;
+    padding-top: 6rem;
+}
+
+.super-duper-left {
+    display: inline-flex;
+    flex-direction: column;
+    width: 50%;
+    height: 13rem;
+    justify-content: space-between;
+}
+
+.super-duper-right {
+    visibility: hidden;
+}
+
 // DESIGN FEATURES
 .section-design-features {
+    z-index: 1;
     background-color: $main_light_background_color;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.design-feature-container {
+    display: inline-flex;
+    width: 30%;
+    height: 25rem;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 // DESIGNED FOR HUMANS
 .section-designed-for-humans {
+    color: $main_light_background_color;
     background-color: $main_dark_background_color;
 }
 
 // FEATURES
 .section-features {
+    color: $main_light_background_color;
     background-color: $secondary_dark_background_color;
+}
+
+.feature-container {
+    width: 24%;
+    height: auto;
 }
 
 // GRID CONTENT
@@ -160,5 +205,26 @@ header {
 
 // FOOTER
 footer {
+    color: $main_light_background_color;
     background-color: $main_dark_background_color;
+}
+
+.footer-main {
+    display: flex;
+}
+
+.footer-left {
+    display: inline-flex;
+    width: 55%;
+    flex-direction: column;
+}
+
+.footer-nav {
+    display: inline-flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.footer-right {
+    width: 40%;
 }
