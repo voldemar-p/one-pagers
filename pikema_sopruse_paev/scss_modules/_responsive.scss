@@ -52,7 +52,7 @@
         height: 100%;
         width: 60%;
         margin: 0.25rem 0;
-        padding: 1rem 3rem;
+        padding: 2.5rem;
     }
     
     .button {
@@ -66,6 +66,11 @@
         & img {
             height: 1.5rem;
         }
+    }
+
+    .mob-smaller {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
     }
 
     .main-container {
@@ -164,6 +169,10 @@
         }
     }
 
+    .mob-smaller {
+        font-size: 1.5rem;
+    }
+
     .naidispaev-ul {
         padding-left: 3rem;
     }
@@ -198,6 +207,10 @@
     section {
         margin: 6% 10% 0 10%;
     }
+
+    #mob-smaller {
+        line-height: 3.5rem;
+    }
 }
 
 @media only screen and (min-width: 1366px) {
@@ -207,6 +220,10 @@
 
     #footer-logo {
         width: 18rem;
+
+        & img {
+            width: 100%;
+        }
     }
     
     section {
