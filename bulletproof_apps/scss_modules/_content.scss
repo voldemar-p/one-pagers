@@ -32,11 +32,18 @@ h3 {
 h4 {
     font-size: 1.4rem;
     font-weight: 300;
-    line-height: 1rem;
+    line-height: 1.8rem;
+    color: $secondary_dark_background_color;
 }
 
 b {
     font-weight: bold;
+}
+
+q {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
 }
 
 .button {
@@ -59,7 +66,7 @@ b {
 
 // HEADER
 header {
-    height: 85vh;
+    height: 100vh;
     width: auto;
     background-image: url(/images/header_background.jpg);
     background-position: center;
@@ -141,35 +148,65 @@ header {
 // SUPER-DUPER
 .section-super-duper {
     background-color: $main-color;
+    height: 27rem;
+    width: auto;
+}
+
+.super-duper-main {
+    display: flex;
+    height: 100%;
+    width: auto;
 }
 
 .super-duper-container {
-    display: flex;
-    height: 20rem;
-    flex-direction: row;
-    padding-top: 6rem;
-}
-
-.super-duper-left {
     display: inline-flex;
     flex-direction: column;
-    width: 50%;
-    height: 13rem;
-    justify-content: space-between;
+    height: 60%;
+    width: 40%;
+    padding-top: 3rem;
+    justify-content: space-around;
+
+    &.right {
+        height: 100%;
+        width: 59%;
+        padding-top: 0;
+        justify-content: unset;
+    }
 }
 
-.super-duper-right {
-    visibility: hidden;
+.super-duper-bg {
+    position: relative;
+    display: inline-flex;
+    height: auto;
+    width: 100%;
+    margin-top: -8rem;
+
+    & :first-child {
+        height: 70%;
+        width: auto;
+        margin-right: -3.5rem;
+        margin-bottom: -6rem;
+        align-self: flex-end;
+    }
+
+    & :last-child {
+        height: 100%;
+        width: auto;
+        z-index: 1;
+    }
 }
 
 // DESIGN FEATURES
 .section-design-features {
-    z-index: 1;
+    position: relative;
+    height: 30rem;
+    z-index: 2;
     background-color: $main_light_background_color;
 }
 
 .main-container {
     display: flex;
+    padding-top: 2rem;
     justify-content: space-between;
 }
 
@@ -183,8 +220,55 @@ header {
 
 // DESIGNED FOR HUMANS
 .section-designed-for-humans {
+    padding-bottom: 0;
+    text-align: center;
     color: $main_light_background_color;
     background-color: $main_dark_background_color;
+
+    & h2 {
+        margin-bottom: 2rem;
+    }
+}
+
+.upper-strip {
+    display: flex;
+    height: 2.5rem;
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+    background-color: $secondary_dark_background_color;
+
+    & :first-child {
+        margin-left: 1.5rem;
+    }
+
+    & span {
+        height: 0.5rem;
+        width: 0.5rem;
+        margin-left: 0.5rem;
+        background-color: $secondary_light_background_color;
+        border-radius: 50%;
+    }
+}
+
+.design-win {
+    display: flex;
+    height: 15rem;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-image: url(/images/design_win.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    & a {
+        padding: 0.75rem 1.5rem;
+        font-size: 1.5rem;
+        border: solid 2px $main_light_background_color;
+    }
 }
 
 // FEATURES
@@ -194,13 +278,76 @@ header {
 }
 
 .feature-container {
-    width: 24%;
+    width: 23%;
     height: auto;
+
+    & h4 {
+        color: $main_light_background_color;
+    }
+
+    & p {
+        color: lightslategray;
+    }
+
+    & img {
+        height: 2rem;
+        width: auto;
+    }
+}
+
+.dark-numbers {
+    color: grey;
 }
 
 // GRID CONTENT
 .section-grid-content {
     background-color: $secondary_light_background_color;
+}
+
+.grid-container {
+    display: flex;
+    width: 100%;
+}
+
+.grid {
+    width: 50%;
+}
+
+// HAND-PEN
+.section-hand-pen {
+    height: 35rem;
+    width: auto;
+    padding: 0;
+    background-image: url(/images/hand_writing.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.purple-box {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 35%;
+    padding-left: 15%;
+    color: white;
+    background-color: $main-color;
+
+    & q {
+        padding: 10% 25% 10% 0;
+    }
+}
+
+.author {
+    display: flex;
+    height: 4rem;
+    width: auto;
+    align-items: center;
+
+    & img {
+        height: 90%;
+        width: auto;
+        padding-right: 1rem;
+    }
 }
 
 // FOOTER
@@ -211,6 +358,11 @@ footer {
 
 .footer-main {
     display: flex;
+
+    & ul, p {
+        font-size: 0.85rem;
+        line-height: 1.75rem;
+    }
 }
 
 .footer-left {
@@ -227,4 +379,26 @@ footer {
 
 .footer-right {
     width: 40%;
+}
+
+.stay-in-touch {
+    display: flex;
+    height: 3.5rem;
+    width: 100%;
+    align-items: center;
+    background-color: white;
+
+    & input {
+        height: 60%;
+        width: 470%;
+        border: none;
+    }
+
+    & i {
+        padding: 0.75rem;
+        font-size: 2rem;
+        text-align: center;
+        color: white;
+        background-color: $main-color;
+    }
 }
