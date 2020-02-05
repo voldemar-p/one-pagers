@@ -60,7 +60,8 @@ table {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 1.75rem;
+  color: #9da5b0;
   overflow-x: hidden;
 }
 
@@ -80,6 +81,7 @@ h2 {
   font-size: 2.5rem;
   font-weight: 300;
   line-height: 1.75;
+  color: white;
 }
 
 h3 {
@@ -92,7 +94,7 @@ h4 {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.8rem;
-  color: #2b303b;
+  color: #696f7c;
 }
 
 b {
@@ -102,6 +104,7 @@ b {
 q {
   font-size: 1.5rem;
   font-weight: 300;
+  line-height: 2.25rem;
   font-style: italic;
 }
 
@@ -113,7 +116,8 @@ q {
   font-weight: bold;
   background-color: #3dd2ae;
   border-radius: 25px;
-  color: #f4f8fb;
+  color: white;
+  cursor: pointer;
 }
 
 .button.top-nav-button {
@@ -122,7 +126,7 @@ q {
 }
 
 .light {
-  color: #f4f8fb;
+  color: white;
 }
 
 header {
@@ -131,6 +135,7 @@ header {
   background-image: url(/images/header_background.jpg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .top-bar {
@@ -146,6 +151,7 @@ header {
 .logo-container {
   width: 4rem;
   height: auto;
+  cursor: pointer;
 }
 
 .logo-container img {
@@ -173,7 +179,7 @@ header {
   display: flex;
   width: 15rem;
   height: auto;
-  color: #f4f8fb;
+  color: #9da5b0;
 }
 
 .search-container :last-child {
@@ -187,7 +193,7 @@ header {
 .search {
   width: 100%;
   padding: 0.75rem 2rem;
-  color: #f4f8fb;
+  color: #9da5b0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#232831), to(#2b303b));
   background-image: linear-gradient(#232831, #2b303b);
   border: none;
@@ -206,12 +212,13 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  cursor: pointer;
 }
 
 .burger-menu-item {
   height: 3px;
   width: 20px;
-  background-color: #f4f8fb;
+  background-color: white;
 }
 
 .header-text-container {
@@ -321,10 +328,18 @@ header {
           justify-content: space-between;
 }
 
+.design-feature-container h3 {
+  color: #2b303b;
+}
+
+.design-feature-container p {
+  color: #44484f;
+}
+
 .section-designed-for-humans {
   padding-bottom: 0;
   text-align: center;
-  color: #f4f8fb;
+  color: #9da5b0;
   background-color: #232831;
 }
 
@@ -354,7 +369,7 @@ header {
   height: 0.5rem;
   width: 0.5rem;
   margin-left: 0.5rem;
-  background-color: #e9eef1;
+  background-color: #434955;
   border-radius: 50%;
 }
 
@@ -380,11 +395,12 @@ header {
 .design-win a {
   padding: 0.75rem 1.5rem;
   font-size: 1.5rem;
-  border: solid 2px #f4f8fb;
+  color: white;
+  border: solid 2px white;
 }
 
 .section-features {
-  color: #f4f8fb;
+  color: #9da5b0;
   background-color: #2b303b;
 }
 
@@ -394,11 +410,11 @@ header {
 }
 
 .feature-container h4 {
-  color: #f4f8fb;
+  color: white;
 }
 
 .feature-container p {
-  color: lightslategray;
+  color: #9da5b0;
 }
 
 .feature-container img {
@@ -407,7 +423,7 @@ header {
 }
 
 .dark-numbers {
-  color: grey;
+  color: #3a4d60;
 }
 
 .section-grid-content {
@@ -427,19 +443,35 @@ header {
   width: 50%;
 }
 
-.grid-container-first {
+.grid-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 35rem;
   width: 100vw;
+}
+
+.grid-container.first {
+  height: 32rem;
+}
+
+.grid-container.second {
+  height: 25rem;
+}
+
+.grid-container.third {
+  height: 22rem;
 }
 
 .connectivity-container {
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 5% 2% 5% 15%;
+  padding: 4% 2% 4% 15%;
+  color: #44484f;
   background-color: #f4f8fb;
+}
+
+.connectivity-container h2 {
+  color: #2b303b;
 }
 
 .cloud-container {
@@ -459,14 +491,6 @@ header {
   background-repeat: no-repeat;
 }
 
-.grid-container-second {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 25rem;
-  width: 100vw;
-}
-
 .grid-image-justified {
   height: 100%;
   margin-left: 30%;
@@ -477,37 +501,84 @@ header {
 }
 
 .grid-purple {
-  padding: 5% 15% 5% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding: 10% 30% 5% 10%;
   color: white;
   background-color: #835fa8;
 }
 
-.grid-container-third {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 20rem;
-  width: 100vw;
+.grid-purple q {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.latest-news {
+  color: white;
+  background-color: #835fa8;
+}
+
+.latest-news span {
+  padding: 0.5rem 1rem;
+  background-color: #232831;
 }
 
 .grid-lorem {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  height: 100%;
+  width: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-left: 30%;
   padding-right: 3%;
-  padding-left: 15%;
+  padding-left: 3%;
+  color: #696f7c;
   background-color: white;
 }
 
-.grid-lorem span {
+.grid-lorem h4 {
+  padding-bottom: 1rem;
+  font-weight: norm;
+  color: #2b303b;
+}
+
+.comments-nr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 30%;
+  padding-left: 3%;
+  background-color: white;
+}
+
+.comments-nr :first-child {
+  padding-right: 0.5rem;
   font-size: 2.5rem;
   font-weight: 300;
+}
+
+.vertical-line {
+  height: 4rem;
+  width: 1px;
+  margin-right: 0.5rem;
+  margin-top: -1rem;
+  background-color: #9da5b0;
 }
 
 .grid-two-phones {
@@ -544,7 +615,7 @@ header {
 }
 
 .purple-box q {
-  padding: 10% 25% 10% 0;
+  padding: 20% 25% 5% 0;
 }
 
 .author {
@@ -565,7 +636,7 @@ header {
 }
 
 footer {
-  color: #f4f8fb;
+  color: white;
   background-color: #232831;
 }
 
@@ -578,6 +649,11 @@ footer {
 .footer-main ul, .footer-main p {
   font-size: 0.85rem;
   line-height: 1.75rem;
+}
+
+.footer-main li:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .footer-left {
@@ -628,6 +704,7 @@ footer {
   font-size: 2rem;
   text-align: center;
   color: white;
+  -webkit-text-stroke: 0.3rem #835fa8;
   background-color: #835fa8;
 }
 /*# sourceMappingURL=style.css.map */

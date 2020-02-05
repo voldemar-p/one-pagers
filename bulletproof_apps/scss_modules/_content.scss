@@ -6,7 +6,8 @@
 body {
     font-family: $main_font;
     font-size: 1rem;
-    line-height: 2rem;
+    line-height: 1.75rem;
+    color: $text-main_color;
     overflow-x: hidden;
 }
 
@@ -26,6 +27,7 @@ h2 {
     font-size: 2.5rem;
     font-weight: 300;
     line-height: 1.75;
+    color: white;
 }
 
 h3 {
@@ -38,7 +40,7 @@ h4 {
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.8rem;
-    color: $secondary_dark_background_color;
+    color: $subheading_color;
 }
 
 b {
@@ -48,6 +50,7 @@ b {
 q {
     font-size: 1.5rem;
     font-weight: 300;
+    line-height: 2.25rem;
     font-style: italic;
 }
 
@@ -57,8 +60,8 @@ q {
     font-weight: bold;
     background-color: $secondary-color;
     border-radius: 25px;
-    color: $main_light_background_color;
-
+    color: white;
+    cursor: pointer;
     &.top-nav-button {
         padding: 0.25rem 1.25rem;
         background-color: $main-color;
@@ -66,7 +69,7 @@ q {
 }
 
 .light {
-    color: $main_light_background_color;
+    color: white;
 }
 
 // HEADER
@@ -76,6 +79,7 @@ header {
     background-image: url(/images/header_background.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .top-bar {
@@ -87,8 +91,8 @@ header {
 .logo-container {
     width: 4rem;
     height: auto;
-
-    & img {
+    cursor: pointer;
+    img {
         width: 100%;
         height: auto;
     }
@@ -106,9 +110,8 @@ header {
     display: flex;
     width: 15rem;
     height: auto;
-    color: $main_light_background_color;
-
-    & :last-child {
+    color: $text-main_color;
+    :last-child {
         font-size: 0.9rem;
         margin-left: -2rem;
         align-self: center;
@@ -118,7 +121,7 @@ header {
 .search {
     width: 100%;
     padding: 0.75rem 2rem;
-    color: $main_light_background_color;
+    color: $text-main_color;
     background-image: linear-gradient($main_dark_background_color, $secondary_dark_background_color);
     border: none;
     border-radius: 25px;
@@ -129,12 +132,13 @@ header {
     flex-direction: column;
     height: 1.1rem;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .burger-menu-item {
     height: 3px;
     width: 20px;
-    background-color: $main_light_background_color;
+    background-color: white;
 }
 
 .header-text-container {
@@ -144,7 +148,6 @@ header {
     margin-top: 10%;
     margin-left: 40%;
     color: white;
-
     :first-child {
         padding-bottom: 1rem;
     }
@@ -169,7 +172,6 @@ header {
     height: 80%;
     width: 40%;
     justify-content: space-around;
-
     &.right {
         height: 100%;
         width: 59%;
@@ -184,16 +186,14 @@ header {
     height: auto;
     width: 100%;
     margin-top: -11rem;
-
-    & :first-child {
+    :first-child {
         height: 70%;
         width: auto;
         margin-right: -3.5rem;
         margin-bottom: -4rem;
         align-self: flex-end;
     }
-
-    & :last-child {
+    :last-child {
         height: 100%;
         width: auto;
         z-index: 1;
@@ -220,16 +220,22 @@ header {
     height: 25rem;
     flex-direction: column;
     justify-content: space-between;
+    h3 {
+        color: $main-heading_color;
+    }
+    p {
+        color: $text-on-white-bg_color;
+
+    }
 }
 
 // DESIGNED FOR HUMANS
 .section-designed-for-humans {
     padding-bottom: 0;
     text-align: center;
-    color: $main_light_background_color;
+    color: $text-main_color;
     background-color: $main_dark_background_color;
-
-    & h2 {
+    h2 {
         margin-bottom: 2rem;
     }
 }
@@ -242,16 +248,14 @@ header {
     margin: 0 auto;
     margin-top: 4rem;
     background-color: $secondary_dark_background_color;
-
-    & :first-child {
+    :first-child {
         margin-left: 1.5rem;
     }
-
-    & span {
+    span {
         height: 0.5rem;
         width: 0.5rem;
         margin-left: 0.5rem;
-        background-color: $secondary_light_background_color;
+        background-color: $circles_color;
         border-radius: 50%;
     }
 }
@@ -267,40 +271,37 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    & a {
+    a {
         padding: 0.75rem 1.5rem;
         font-size: 1.5rem;
-        border: solid 2px $main_light_background_color;
+        color: white;
+        border: solid 2px white;
     }
 }
 
 // FEATURES
 .section-features {
-    color: $main_light_background_color;
+    color: $text-main_color;
     background-color: $secondary_dark_background_color;
 }
 
 .feature-container {
     width: 23%;
     height: auto;
-
-    & h4 {
-        color: $main_light_background_color;
+    h4 {
+        color: white;
     }
-
-    & p {
-        color: lightslategray;
+    p {
+        color: $text-main_color;
     }
-
-    & img {
+    img {
         height: 2rem;
         width: auto;
     }
 }
 
 .dark-numbers {
-    color: grey;
+    color: $numbers_color;
 }
 
 // GRID CONTENT
@@ -316,22 +317,33 @@ header {
     width: 50%;
 }
 
-.grid-container-first {
+.grid-container {
     display: flex;
-    height: 35rem;
     width: 100vw;
+    &.first {
+        height: 32rem;
+    }
+    &.second {
+        height: 25rem;
+    }
+    &.third {
+        height: 22rem;
+    }
 }
 
 .connectivity-container {
     justify-content: space-around;
-    padding: 5% 2% 5% 15%;
+    padding: 4% 2% 4% 15%;
+    color: $text-on-white-bg_color;
     background-color: $main_light_background_color;
+    h2 {
+        color: $main-heading_color;
+    }
 }
 
 .cloud-container {
     display: inline-flex;
-
-    & :first-child {
+    :first-child {
         padding-right: 1rem;
     }
 }
@@ -341,12 +353,6 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.grid-container-second {
-    display: flex;
-    height: 25rem;
-    width: 100vw;
 }
 
 .grid-image-justified {
@@ -359,29 +365,67 @@ header {
 }
 
 .grid-purple {
-    padding: 5% 15% 5% 5%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10% 30% 5% 10%;
     color: white;
     background-color: $main-color;
+    q {
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
 }
 
-.grid-container-third {
-    display: flex;
-    height: 20rem;
-    width: 100vw;
+.italic {
+    font-style: italic;
+}
+
+.latest-news {
+    color: white;
+    background-color: $main-color;
+    span {
+        padding: 0.5rem 1rem;
+        background-color: $main_dark_background_color;
+    }
 }
 
 .grid-lorem {
     display: inline-flex;
+    height: 100%;
+    width: auto;
     flex-direction: column;
     justify-content: space-around;
+    margin-left: 30%;
     padding-right: 3%;
-    padding-left: 15%;
+    padding-left: 3%;
+    color: $subheading_color;
     background-color: white;
+    h4 {
+        padding-bottom: 1rem;
+        font-weight: norm;
+        color: $main-heading_color;
+    }
+}
 
-    span {
+.comments-nr {
+    display: flex;
+    margin-left: 30%;
+    padding-left: 3%;
+    background-color: white;
+    :first-child {
+        padding-right: 0.5rem;
         font-size: 2.5rem;
         font-weight: 300;
     }
+}
+
+.vertical-line {
+    height: 4rem;
+    width: 1px;
+    margin-right: 0.5rem;
+    margin-top: -1rem;
+    background-color: $text-main_color;
 }
 
 .grid-two-phones {
@@ -411,9 +455,8 @@ header {
     padding-left: 15%;
     color: white;
     background-color: $main-color;
-
-    & q {
-        padding: 10% 25% 10% 0;
+    q {
+        padding: 20% 25% 5% 0;
     }
 }
 
@@ -422,8 +465,7 @@ header {
     height: 4rem;
     width: auto;
     align-items: center;
-
-    & img {
+    img {
         height: 90%;
         width: auto;
         padding-right: 1rem;
@@ -432,16 +474,19 @@ header {
 
 // FOOTER
 footer {
-    color: $main_light_background_color;
+    color: white;
     background-color: $main_dark_background_color;
 }
 
 .footer-main {
     display: flex;
-
-    & ul, p {
+    ul, p {
         font-size: 0.85rem;
         line-height: 1.75rem;
+    }
+    li:hover {
+        text-decoration: underline;
+        cursor: pointer;
     }
 }
 
@@ -467,18 +512,17 @@ footer {
     width: 100%;
     align-items: center;
     background-color: white;
-
-    & input {
+    input {
         height: 60%;
         width: 470%;
         border: none;
     }
-
-    & i {
+    i {
         padding: 0.75rem;
         font-size: 2rem;
         text-align: center;
         color: white;
+        -webkit-text-stroke: 0.3rem $main-color;
         background-color: $main-color;
     }
 }
