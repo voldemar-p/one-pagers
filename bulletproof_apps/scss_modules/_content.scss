@@ -1,13 +1,18 @@
 // GENERAL
+*{
+    box-sizing: border-box;
+}
+
 body {
     font-family: $main_font;
     font-size: 1rem;
     line-height: 2rem;
+    overflow-x: hidden;
 }
 
 section,
 footer {
-    padding: 3% 15%;
+    padding: 5% 15%;
 }
 
 h1 {
@@ -148,7 +153,7 @@ header {
 // SUPER-DUPER
 .section-super-duper {
     background-color: $main-color;
-    height: 27rem;
+    height: 30rem;
     width: auto;
 }
 
@@ -161,9 +166,8 @@ header {
 .super-duper-container {
     display: inline-flex;
     flex-direction: column;
-    height: 60%;
+    height: 80%;
     width: 40%;
-    padding-top: 3rem;
     justify-content: space-around;
 
     &.right {
@@ -179,13 +183,13 @@ header {
     display: inline-flex;
     height: auto;
     width: 100%;
-    margin-top: -8rem;
+    margin-top: -11rem;
 
     & :first-child {
         height: 70%;
         width: auto;
         margin-right: -3.5rem;
-        margin-bottom: -6rem;
+        margin-bottom: -4rem;
         align-self: flex-end;
     }
 
@@ -199,7 +203,7 @@ header {
 // DESIGN FEATURES
 .section-design-features {
     position: relative;
-    height: 30rem;
+    height: 37rem;
     z-index: 2;
     background-color: $main_light_background_color;
 }
@@ -301,22 +305,98 @@ header {
 
 // GRID CONTENT
 .section-grid-content {
+    padding: 0;
     background-color: $secondary_light_background_color;
 }
 
-.grid-container {
+.grid {
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
 }
 
-.grid {
-    width: 50%;
+.grid-container-first {
+    display: flex;
+    height: 35rem;
+    width: 100vw;
+}
+
+.connectivity-container {
+    justify-content: space-around;
+    padding: 5% 2% 5% 15%;
+    background-color: $main_light_background_color;
+}
+
+.cloud-container {
+    display: inline-flex;
+
+    & :first-child {
+        padding-right: 1rem;
+    }
+}
+
+.grid-image-full {
+    background-image: url(/images/hand.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-container-second {
+    display: flex;
+    height: 25rem;
+    width: 100vw;
+}
+
+.grid-image-justified {
+    height: 100%;
+    margin-left: 30%;
+    background-image: url(/images/play_phone.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-purple {
+    padding: 5% 15% 5% 5%;
+    color: white;
+    background-color: $main-color;
+}
+
+.grid-container-third {
+    display: flex;
+    height: 20rem;
+    width: 100vw;
+}
+
+.grid-lorem {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 3%;
+    padding-left: 15%;
+    background-color: white;
+
+    span {
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+}
+
+.grid-two-phones {
+    height: 100%;
+    margin-right: 30%;
+    background-image: url(/images/two_phones.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 // HAND-PEN
 .section-hand-pen {
     height: 35rem;
-    width: auto;
+    width: 100vw;
     padding: 0;
     background-image: url(/images/hand_writing.png);
     background-position: center;
@@ -327,7 +407,7 @@ header {
     display: flex;
     flex-direction: column;
     height: 80%;
-    width: 35%;
+    width: 50%;
     padding-left: 15%;
     color: white;
     background-color: $main-color;

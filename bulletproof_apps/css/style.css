@@ -52,15 +52,21 @@ table {
   border-spacing: 0;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   line-height: 2rem;
+  overflow-x: hidden;
 }
 
 section,
 footer {
-  padding: 3% 15%;
+  padding: 5% 15%;
 }
 
 h1 {
@@ -223,7 +229,7 @@ header {
 
 .section-super-duper {
   background-color: #835fa8;
-  height: 27rem;
+  height: 30rem;
   width: auto;
 }
 
@@ -243,9 +249,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 60%;
+  height: 80%;
   width: 40%;
-  padding-top: 3rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -266,14 +271,14 @@ header {
   display: inline-flex;
   height: auto;
   width: 100%;
-  margin-top: -8rem;
+  margin-top: -11rem;
 }
 
 .super-duper-bg :first-child {
   height: 70%;
   width: auto;
   margin-right: -3.5rem;
-  margin-bottom: -6rem;
+  margin-bottom: -4rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
@@ -286,7 +291,7 @@ header {
 
 .section-design-features {
   position: relative;
-  height: 30rem;
+  height: 37rem;
   z-index: 2;
   background-color: #f4f8fb;
 }
@@ -406,23 +411,117 @@ header {
 }
 
 .section-grid-content {
+  padding: 0;
   background-color: #e9eef1;
 }
 
-.grid-container {
+.grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 50%;
 }
 
-.grid {
-  width: 50%;
+.grid-container-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35rem;
+  width: 100vw;
+}
+
+.connectivity-container {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 5% 2% 5% 15%;
+  background-color: #f4f8fb;
+}
+
+.cloud-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.cloud-container :first-child {
+  padding-right: 1rem;
+}
+
+.grid-image-full {
+  background-image: url(/images/hand.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid-container-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 25rem;
+  width: 100vw;
+}
+
+.grid-image-justified {
+  height: 100%;
+  margin-left: 30%;
+  background-image: url(/images/play_phone.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid-purple {
+  padding: 5% 15% 5% 5%;
+  color: white;
+  background-color: #835fa8;
+}
+
+.grid-container-third {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20rem;
+  width: 100vw;
+}
+
+.grid-lorem {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-right: 3%;
+  padding-left: 15%;
+  background-color: white;
+}
+
+.grid-lorem span {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.grid-two-phones {
+  height: 100%;
+  margin-right: 30%;
+  background-image: url(/images/two_phones.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section-hand-pen {
   height: 35rem;
-  width: auto;
+  width: 100vw;
   padding: 0;
   background-image: url(/images/hand_writing.png);
   background-position: center;
@@ -438,7 +537,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 80%;
-  width: 35%;
+  width: 50%;
   padding-left: 15%;
   color: white;
   background-color: #835fa8;
