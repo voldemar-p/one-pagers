@@ -161,11 +161,7 @@ header {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 30%;
   height: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -177,6 +173,7 @@ header {
   display: flex;
   width: 15rem;
   height: auto;
+  margin-right: 1rem;
   color: #9da5b0;
 }
 
@@ -207,6 +204,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 1.1rem;
+  margin-left: 1rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -221,7 +219,7 @@ header {
 
 .header-text-container {
   display: block;
-  width: 40%;
+  width: 40rem;
   height: auto;
   margin-top: 10%;
   margin-left: 40%;
@@ -262,7 +260,7 @@ header {
 
 .super-duper-container.right {
   height: 100%;
-  width: 59%;
+  width: 60%;
   padding-top: 0;
   -webkit-box-pack: unset;
       -ms-flex-pack: unset;
@@ -276,6 +274,9 @@ header {
   display: inline-flex;
   height: auto;
   width: 100%;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
   margin-top: -11rem;
 }
 
@@ -658,6 +659,7 @@ header {
   background-image: url(/images/hand_writing.png);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .purple-box {
@@ -767,5 +769,173 @@ footer {
   color: white;
   -webkit-text-stroke: 0.3rem #835fa8;
   background-color: #835fa8;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  section,
+  footer {
+    padding: 5% 5%;
+  }
+  header {
+    height: 70vh;
+  }
+  .header-text-container {
+    width: 35rem;
+    margin-top: 15%;
+    margin-left: 25%;
+    padding-right: 5%;
+  }
+  .section-super-duper {
+    height: 20rem;
+  }
+  .super-duper-container {
+    width: 55%;
+  }
+  .super-duper-container.right {
+    width: 45%;
+  }
+  .super-duper-bg {
+    margin-top: -8rem;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .super-duper-bg :first-child {
+    display: none;
+  }
+  .super-duper-bg :last-child {
+    height: 80%;
+    width: auto;
+  }
+  .design-feature-container {
+    height: 30rem;
+  }
+  .connectivity-container {
+    padding: 4% 2% 4% 5%;
+  }
+  .grid-image-justified {
+    margin-left: 10%;
+  }
+  .grid-purple {
+    padding: 10% 10% 5% 10%;
+  }
+  .grid-lorem {
+    margin-left: 10%;
+  }
+  .comments-nr {
+    margin-left: 10%;
+  }
+  .grid-two-phones {
+    margin-right: 10%;
+  }
+  .purple-box {
+    padding-left: 5%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  section,
+  footer {
+    padding: 5% 10%;
+  }
+  h1 {
+    font-size: 4rem;
+    line-height: 5.5rem;
+  }
+  header {
+    height: 100vh;
+  }
+  .header-text-container {
+    width: 40rem;
+    margin-left: 25%;
+    padding-right: 0;
+  }
+  .section-super-duper {
+    height: 30rem;
+  }
+  .super-duper-container {
+    width: 40%;
+  }
+  .super-duper-container.right {
+    width: 60%;
+  }
+  .super-duper-bg {
+    margin-top: -11rem;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+  }
+  .super-duper-bg :first-child {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .super-duper-bg :last-child {
+    height: 100%;
+  }
+  .design-feature-container {
+    height: 28rem;
+  }
+  .connectivity-container {
+    padding: 4% 2% 4% 7.5%;
+  }
+  .grid-image-justified {
+    margin-left: 15%;
+  }
+  .grid-purple {
+    padding: 10% 15% 5% 10%;
+  }
+  .grid-lorem {
+    margin-left: 15%;
+  }
+  .comments-nr {
+    margin-left: 15%;
+  }
+  .grid-two-phones {
+    margin-right: 15%;
+  }
+  .purple-box {
+    padding-left: 7.5%;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  section,
+  footer {
+    padding: 5% 15%;
+  }
+  .header-text-container {
+    width: 40rem;
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  .design-feature-container {
+    height: 30rem;
+  }
+  .connectivity-container {
+    padding: 4% 2% 4% 15%;
+  }
+  .grid-image-justified {
+    margin-left: 30%;
+  }
+  .grid-purple {
+    padding: 10% 30% 5% 10%;
+  }
+  .grid-lorem {
+    margin-left: 30%;
+  }
+  .comments-nr {
+    margin-left: 30%;
+  }
+  .grid-two-phones {
+    margin-right: 30%;
+  }
+  .purple-box {
+    padding-left: 15%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

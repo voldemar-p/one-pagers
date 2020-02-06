@@ -100,9 +100,7 @@ header {
 
 .top-bar-right {
     display: inline-flex;
-    width: 30%;
     height: auto;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -110,6 +108,7 @@ header {
     display: flex;
     width: 15rem;
     height: auto;
+    margin-right: 1rem;
     color: $text-main_color;
     :last-child {
         font-size: 0.9rem;
@@ -131,6 +130,7 @@ header {
     display: inline-flex;
     flex-direction: column;
     height: 1.1rem;
+    margin-left: 1rem;
     justify-content: space-between;
     cursor: pointer;
 }
@@ -143,7 +143,7 @@ header {
 
 .header-text-container {
     display: block;
-    width: 40%;
+    width: 40rem;
     height: auto;
     margin-top: 10%;
     margin-left: 40%;
@@ -174,7 +174,7 @@ header {
     justify-content: space-around;
     &.right {
         height: 100%;
-        width: 59%;
+        width: 60%;
         padding-top: 0;
         justify-content: unset;
     }
@@ -185,6 +185,7 @@ header {
     display: inline-flex;
     height: auto;
     width: 100%;
+    justify-content: none;
     margin-top: -11rem;
     :first-child {
         height: 70%;
@@ -489,6 +490,7 @@ header {
     background-image: url(/images/hand_writing.png);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .purple-box {
