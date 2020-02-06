@@ -55,8 +55,8 @@ q {
 }
 
 .button {
+    display: table;
     padding: 0.5rem 1.5rem;
-    width: fit-content;
     font-weight: bold;
     background-color: $secondary-color;
     border-radius: 25px;
@@ -344,8 +344,17 @@ header {
 
 .cloud-container {
     display: inline-flex;
-    :first-child {
-        padding-right: 1rem;
+    align-items: baseline;
+}
+
+.cloud-icon-container {
+    display: inline-block;
+    height: 2.5rem;
+    width: auto;
+    padding-right: 1rem;
+    img {
+        height: 100%;
+        width: auto;
     }
 }
 

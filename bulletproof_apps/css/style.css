@@ -109,10 +109,8 @@ q {
 }
 
 .button {
+  display: table;
   padding: 0.5rem 1.5rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   font-weight: bold;
   background-color: #3dd2ae;
   border-radius: 25px;
@@ -479,10 +477,21 @@ header {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
-.cloud-container :first-child {
+.cloud-icon-container {
+  display: inline-block;
+  height: 2.5rem;
+  width: auto;
   padding-right: 1rem;
+}
+
+.cloud-icon-container img {
+  height: 100%;
+  width: auto;
 }
 
 .grid-image-full {
