@@ -287,8 +287,24 @@ header {
     background-color: $secondary-dark-background_color;
 }
 
+.features-main-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.features-secondary-container {
+    display: flex;
+    height: 100%;
+    width: 47.5%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .feature-container {
-    width: 23%;
+    width: 45%;
     height: auto;
     h4 {
         color: white;
@@ -360,6 +376,7 @@ header {
 }
 
 .grid-image-full {
+    display: flex;
     background-image: url(/images/hand.png);
     background-position: center;
     background-size: cover;
@@ -419,6 +436,7 @@ header {
     background-color: $main-color;
     span {
         padding: 0.5rem 1rem;
+        border: none;
         background-color: $main-dark-background_color;
     }
 }
