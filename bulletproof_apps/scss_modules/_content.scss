@@ -1,3 +1,4 @@
+
 // GENERAL
 *{
     box-sizing: border-box;
@@ -149,13 +150,14 @@ header {
     height: auto;
     margin-top: 10%;
     margin-left: 40%;
+    padding-bottom: 10%;
     color: white;
     :first-child {
         padding-bottom: 1rem;
     }
 }
 
-// SUPER-DUPER
+// SECTION SUPER-DUPER
 .section-super-duper {
     background-color: $main-color;
     height: 30rem;
@@ -205,7 +207,7 @@ header {
     }
 }
 
-// DESIGN FEATURES
+// SECTION DESIGN FEATURES
 .section-design-features {
     position: relative;
     height: 37rem;
@@ -234,7 +236,7 @@ header {
     }
 }
 
-// DESIGNED FOR HUMANS
+// SECTION DESIGNED FOR HUMANS
 .section-designed-for-humans {
     padding-bottom: 0;
     text-align: center;
@@ -284,7 +286,7 @@ header {
     }
 }
 
-// FEATURES
+// SECTION FEATURES
 .section-features {
     color: $text-main_color;
     background-color: $secondary-dark-background_color;
@@ -325,7 +327,7 @@ header {
     color: $numbers_color;
 }
 
-// GRID CONTENT
+// SECTION GRID CONTENT
 .section-grid-content {
     padding: 0;
     background-color: $secondary-light-background_color;
@@ -505,7 +507,7 @@ header {
     }
 }
 
-// HAND-PEN
+// SECTION HAND-PEN
 .section-hand-pen {
     height: 35rem;
     width: 100vw;
