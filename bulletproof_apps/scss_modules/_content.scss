@@ -56,6 +56,7 @@ q {
 
 .button {
     display: table;
+    max-width: fit-content;
     padding: 0.5rem 1.5rem;
     font-weight: bold;
     background-color: $secondary-color;
@@ -63,6 +64,7 @@ q {
     color: white;
     cursor: pointer;
     &.top-nav-button {
+        max-width: none;
         padding: 0.25rem 1.25rem;
         background-color: $main-color;
     }
@@ -168,13 +170,15 @@ header {
 
 .super-duper-container {
     display: inline-flex;
-    flex-direction: column;
     height: 80%;
     width: 40%;
+    z-index: 2;
+    flex-direction: column;
     justify-content: space-around;
     &.right {
         height: 100%;
         width: 60%;
+        z-index: 0;
         padding-top: 0;
         justify-content: unset;
     }
@@ -232,7 +236,6 @@ header {
 
 // DESIGNED FOR HUMANS
 .section-designed-for-humans {
-    padding-top: 0;
     padding-bottom: 0;
     text-align: center;
     color: $text-main_color;
@@ -420,6 +423,7 @@ header {
     height: 100%;
     padding: 10% 30% 5% 10%;
     color: white;
+    border: none;
     background-color: $main-color;
     q {
         padding-top: 0.5rem;
@@ -433,6 +437,7 @@ header {
 
 .latest-news {
     color: white;
+    border: none;
     background-color: $main-color;
     span {
         padding: 0.5rem 1rem;
@@ -504,7 +509,9 @@ header {
 .section-hand-pen {
     height: 35rem;
     width: 100vw;
+    height: auto;
     padding: 0;
+    border: none;
     background-image: url(/images/hand_writing.png);
     background-position: center;
     background-size: cover;

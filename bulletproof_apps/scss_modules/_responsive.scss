@@ -26,11 +26,11 @@
 
     section,
     footer {
-        padding: 5% 5%;
+        padding: 5% 10%;
     }
 
     header {
-        height: 80vh;
+        height: 100%;
     }
 
     .top-bar {
@@ -56,17 +56,19 @@
     }
 
     .header-text-container {
-        width: 90%;
+        width: 80%;
         margin-top: 20%;
-        margin-left: 5%;
+        margin-left: 10%;
+        padding-bottom: 10%;
     }
 
     .section-super-duper {
-        height: 20rem;
+        height: 25rem;
     }
 
     .super-duper-container {
         width: 100%;
+        padding-top: 15%;
         &.right {
             width: 0;
         }
@@ -82,20 +84,24 @@
     }
 
     .section-design-features {
-        height: 95rem;
+        height: 100%;
     }
 
     .main-container {
         height: 100%;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: unset;
     }
 
     .design-feature-container {
         display: inline-flex;
         width: 100%;
         height: 100%;
+        padding-bottom: 5rem;
         justify-content: space-around;
+        h3, h4, p {
+            padding-bottom: 1rem;
+        }
     }
 
     .upper-strip {
@@ -113,18 +119,16 @@
 
     .features-secondary-container {
         width: 100%;
-        height: 40rem;
+        height: 50%;
         flex-direction: column;
         align-items: center;
+        justify-content: unset;
     }
 
     .feature-container {
         width: 90%;
         height: 50%;
-    }
-
-    .connectivity-container {
-        padding: 4% 2% 4% 5%;
+        padding-bottom: 5rem;
     }
 
     .grid {
@@ -140,8 +144,12 @@
             height: 40rem;
         }
         &.third {
-            height: 40rem;
+            height: 50rem;
         }
+    }
+
+    .connectivity-container {
+        padding: 4% 12.5% 4% 12.5%;
     }
 
     .grid-image-full {
@@ -153,15 +161,27 @@
     }
 
     .grid-purple {
-        padding: 10% 10% 5% 10%;
+        padding: 10% 12.5% 5% 12.5%;
     }
 
     .grid-lorem {
         margin-left: 0;
+        padding-left: 12.5%;
+        padding-right: 12.5%;
     }
 
     .comments-nr {
         margin-left: 0;
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+        :first-child {
+            font-size: 1.5rem;
+        }
+    }
+
+    .vertical-line {
+        height: 2rem;
+        margin-top: 0;
     }
 
     .grid-two-phones {
@@ -176,15 +196,19 @@
     .purple-box {
         height: 100%;
         width: 100%;
-        padding-left: 10%;
+        padding-left: 12.5%;
         q {
-            padding: 0;
+            padding: 15% 5% 0 0;
         }
     }
 
     .footer-main {
         height: 45rem;
         justify-content: space-around;
+        ul, p {
+            font-size: 0.8rem;
+            line-height: 1.7rem;
+        }
     }
     
     .footer-left {
@@ -229,7 +253,7 @@
     }
 
     header {
-        height: 70vh;
+        height: 100%;
     }
 
     .top-bar {
@@ -262,11 +286,12 @@
     }
 
     .section-super-duper {
-        height: 20rem;
+        height: 22rem;
     }
 
     .super-duper-container {
         width: 55%;
+        padding-top: 5%;
         &.right {
             width: 45%;
         }
@@ -280,7 +305,7 @@
         }
         :last-child {
             display: flex;
-            height: 80%;
+            height: 70%;
             width: auto;
         }
     }
@@ -290,14 +315,17 @@
     }
 
     .main-container {
-        height: 100%;
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .design-feature-container {
-        height: 30rem;
+        height: 35rem;
         width: 30%;
         justify-content: space-between;
+        h3, h4, p {
+            padding-bottom: 0;
+        }
     }
 
     .upper-strip {
@@ -329,6 +357,10 @@
         padding: 4% 2% 4% 5%;
     }
 
+    .grid {
+        width: 50%;
+    }
+
     .grid-container {
         flex-direction: row;
         &.first {
@@ -356,10 +388,14 @@
 
     .grid-lorem {
         margin-left: 10%;
+        padding-left: 3%;
+        padding-right: 3%;
     }
 
     .comments-nr {
         margin-left: 10%;
+        padding-left: 3%;
+        padding-right: 3%;
     }
 
     .grid-two-phones {
@@ -383,6 +419,10 @@
     .footer-main {
         height: 100%;
         justify-content: space-between;
+        ul, p {
+            font-size: 0.85rem;
+            line-height: 1.75rem;
+        }
     }
     
     .footer-left {
@@ -396,18 +436,23 @@
 } 
 	
 @media only screen and (min-width: 1024px) {
-    section,
-    footer {
-        padding: 5% 10%;
-    }
-
     h1 {
         font-size: 4rem;
         line-height: 5.5rem;
     }
 
+    q {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
+
+    section,
+    footer {
+        padding: 5% 10%;
+    }
+
     header {
-        height: 100vh;
+        height: 90vh;
     }
 
     .header-text-container {
@@ -432,6 +477,7 @@
         justify-content: none;
         :first-child {
             display: inline-flex;
+            height: 60%;
         }
         :last-child {
             height: 100%;
@@ -439,7 +485,7 @@
     }
 
     .design-feature-container {
-        height: 28rem;
+        height: 30rem;
     }
 
     .features-secondary-container {
@@ -518,6 +564,14 @@
 
     .comments-nr {
         margin-left: 30%;
+        :first-child {
+            font-size: 2.5rem;
+        }
+    }
+
+    .vertical-line {
+        height: 4rem;
+        margin-top: -1rem;
     }
 
     .grid-two-phones {
