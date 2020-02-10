@@ -1,2 +1,2 @@
 # one-pagers
-Responsive one page websites made with scss &amp; html
+Responsive one page websites created with HTML5, CSS3 and SCSS
